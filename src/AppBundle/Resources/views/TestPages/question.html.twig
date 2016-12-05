@@ -3,8 +3,8 @@
 {% set charArray = {1 : 'A', 2 : 'B', 3 : 'C', 4 : 'D', 5 : 'E', 6 : 'F', 7 : 'G'} %}
 
 {% block body %}
-    <div class="black-background orange-text">
-        <div class="container">
+    <div id="headerwrap">
+        <div class="container min-height-100">
             <div class="row">
                 <div class="col-lg-12">
                     {% if current.contributors.count > 0 %}
@@ -88,7 +88,7 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
     {% endif %}
-            </div>
+
         </div>
     </div>
 {% endblock %}

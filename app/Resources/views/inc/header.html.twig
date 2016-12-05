@@ -1,6 +1,6 @@
 <!-- Static navbar -->
 <header>
-    <nav class="navbar navbar-default center">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -58,11 +58,9 @@
 
                         </ul>
                     {% else %}
-                        <ul class="nav navbar-nav navbar-right">
-                            <div class="list-social">
+                        <ul class="nav navbar-nav navbar-right list-social">
                                 <li><a class="icon-4" href="{{ path('hwi_oauth_service_redirect', {'service': 'google' }) }}" alt="Sign in with Google"></a></li>
                                 <li><a class="icon-1" href="{{ path('hwi_oauth_service_redirect', {'service': 'facebook' }) }}" alt="Sign in with Facebook"></a></li>
-                            </div>
                         </ul>
                     {% endif %}
             </div><!--/.nav-collapse -->
