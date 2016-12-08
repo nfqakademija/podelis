@@ -15,10 +15,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ path('quick_test') }}">Quick test</a></li>
+                    <li><a class="dropdown-2" href="{{ path('quick_test') }}">Quick test</a></li>
                     {%  if app.user %}
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category tests <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle dropdown-2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category tests <span class="caret"></span></a>
                             <ul class="dropdown-menu position-topmost">
                                 <li><a href="/category-test/1-php-basics">PHP Basics</a></li>
                                 <li><a href="/category-test/2-functions-and-arrays">Functions and Arrays</a></li>
@@ -36,7 +36,7 @@
                     {%  if app.user %}
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="{{ app.user.avatar }}"  class="img-circle" height="30" width="30">
+                                <a href="#" class="dropdown-toggle dropdown-2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ app.user.name }}<img src="{{ app.user.avatar }}"  class="img-circle" height="40" width="40">
                                 </a>
 
                                 <ul class="dropdown-menu position-topmost">

@@ -241,7 +241,7 @@ label{
 }
 
 .yellow{
-  color: #E0BE23;
+  color: #E7C82C;
 }
 
 .blue-new{
@@ -294,6 +294,31 @@ label{
 
 #answers {
   display: inline;
+}
+
+.dropdown-2:focus, .dropdown-2:hover, .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent !important;
+  color: #353939 !important;
+}
+
+.dropdown-2:focus, .dropdown-2:hover, .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  font-weight: 700;
+}
+
+.dropdown-2 {
+  font-weight: 700;
+}
+
+.bold500 {
+  font-weight: 500;
+}
+
+.bold600 {
+  font-weight: 600;
+}
+
+.crlgr {
+  color: #353939;
 }
 
 .seen {
