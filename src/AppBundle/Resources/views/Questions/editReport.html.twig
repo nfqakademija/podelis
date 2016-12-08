@@ -7,10 +7,13 @@
 {% endblock %}
 
 {% block body %}
-    {{ form_start(form) }}
-    {{ form_row(form.reason) }}
-    <input type="submit" value="Edit report">
-    {{ form_end(form) }}
+    <div class="container" id="contact">
+        {{ form_start(form) }}
+        {{ form_row(form.reason) }}
+        {{ form_row(form.question) }}
+        <input type="submit" value="Edit report">
+        {{ form_end(form) }}
+    </div>
 {% endblock %}
 
 
